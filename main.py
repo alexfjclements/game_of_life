@@ -25,6 +25,9 @@ def Update(data):
 
     for y in range(GridSize):
 
+        yMinOne = y - 1
+        yPlusOne = y + 1
+
         for x in range(GridSize):
 
             gridsize = GridSize - 1
@@ -33,8 +36,6 @@ def Update(data):
 
             xMinOne = x - 1
             xPlusOne = x + 1
-            yMinOne = y - 1
-            yPlusOne = y + 1
 
             # Set boundary conditions
             if xMinOne < 0:
